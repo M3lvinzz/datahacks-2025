@@ -34,6 +34,6 @@ output = loaded_model.predict([input])
 
 if st.button('Run input'):
     with st.spinner("Wait for it...", show_time=True):
-        time.sleep(1)
+        time.sleep(5)
         st.success(output[0])
 

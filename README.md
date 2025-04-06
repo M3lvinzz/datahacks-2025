@@ -1,5 +1,9 @@
 # datahacks-2025
 Project for Datahacks 2025
+
+## Link to Streamlit Website
+https://video-game-classification.streamlit.app/
+
 ## Inspiration
 Due to the sudden emergence of indie games toppling the video game charts over the past couple of years, we had a rough idea of trying to do a project based on video games. We were inspired after looking at a couple of reviews from looking at one of the biggest video game distributors in the world Steam. 
 

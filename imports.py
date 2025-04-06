@@ -20,3 +20,4 @@ from sklearn.pipeline import Pipeline
 from sklearn.compose import ColumnTransformer
 from sklearn.metrics import classification_report
 from sklearn.pipeline import make_pipeline
+import joblib

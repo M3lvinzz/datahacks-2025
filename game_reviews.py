@@ -16,16 +16,16 @@ def clean(review):
     review = re.sub(r'[^a-zA-Z0-9 ]', '', review)
     return review
 
-st.logo(image = 'racoon.jpg')
+st.logo(image = 'images/racoon.jpg')
 st.markdown("<h1 style='text-align: center; color: black;'>Genre Prediction based on Reviews </h1>", unsafe_allow_html=True)
 st.write('Inspired by our love for video games, we decided to build a prediction model that can distinguish what type of genre a video game is based on the review input down below.')
 
 
-data = pd.read_csv('final_data.csv')
+data = pd.read_csv('datasets/final_data.csv')
 st.write(data)
 
 
-input = st.text_input("Please enter a review and we'll predict the genre",)
+input = st.text_area("Please enter a review and we'll predict the genre",)
 input = clean(input)
 
 loaded_model = joblib.load('genre_classifier_model.joblib')
@@ -34,6 +34,6 @@ output = loaded_model.predict([input])
 
 if st.button('Run input'):
     with st.spinner("Wait for it...", show_time=True):
-        time.sleep(5)
+        time.sleep(3)
         st.success(output[0])
 
